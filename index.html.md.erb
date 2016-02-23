@@ -2,6 +2,8 @@
 title: Index
 ---
 
+See [Recent Additions and Updates](recent.html).
+
 ## <a id="intro"></a> Introduction
 
 * [What is BOSH?](about.html)
@@ -57,12 +59,16 @@ title: Index
 
 ### <a id="deployment-config"></a> Detailed deployment configuration
 
-* Deployment Jobs
-* Resource Pools
+* [Cloud config](cloud-config.html)
+    * [AZs](azs.html)
+    * [Networks](networks.html)
     * [VM anti-affinity](vm-anti-affinity.html)
-* [Networks](networks.html)
-* [Persistent disks](persistent-disks.html)
+* [Runtime config](runtime-config.html)
+    * [Addons](runtime-config.html#addons)
 * [Trusted certificates](trusted-certs.html)
+* [Manifest v2 schema](manifest-v2.html)
+    * [Renaming/migrating instance groups](migrated-from.html)
+* [Persistent and orphaned disks](persistent-disks.html)
 
 ### <a id="cpi-config"></a> Detailed CPI configuration & troubleshooting
 
@@ -104,20 +110,20 @@ title: Index
     * [Creating a release](create-release.html)
     * Testing with dev releases
     * Cutting final releases
-        * Versioning of releases
-* What is a job?
+    * [Compiled releases](compiled-releases.html)
+* [What is a job?](jobs.html)
     * Creating a job
-    * Job properties
     * [Job lifecycle](job-lifecycle.html)
         * [Pre-start script](pre-start.html)
+        * [Post-start script](post-start.html)
+        * [Post-deploy script](post-deploy.html)
         * [Drain script](drain.html)
 * What is a package?
     * [Creating a package](packages.html)
     * Relationship to release blobs
 * How do releases, jobs, and packages interact?
 * Managing release repository
-    * Release blobstore
-        * [Configuring S3 release blobstore](s3-release-blobstore.html)
+    * [Configuring S3 release blobstore](s3-release-blobstore.html)
 
 ---
 ## <a id="extend"></a> Extending BOSH
